@@ -1,26 +1,26 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutMe from "./components/AboutMe";
 import NavBar from "./components/NavBar";
+import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import HobbiesInterests from "./components/HobbiesInterests";
+import Passions from "./components/Passions";
+import AcademicBackground from "./components/AcademicBackground";
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar /> {/* Ensure the NavBar is always visible */}
-      <div className="p-4">
+      {/* Navigation Bar (Always Visible) */}
+      <NavBar />
+
+      {/* Page Content */}
+      <div className="p-6">
         <Routes>
           <Route path="/aboutme" element={<AboutMe />} />
-          {/* Placeholder Routes for future pages */}
           <Route path="/skills" element={<Skills />} />
-          <Route
-            path="/hobbies"
-            element={<div>Hobbies & Interests Page</div>}
-          />
-          <Route path="/passions" element={<div>Passions Page</div>} />
-          <Route
-            path="/academic"
-            element={<div>Academic Background Page</div>}
-          />
+          <Route path="/hobbies" element={<HobbiesInterests />} />
+          <Route path="/passions" element={<Passions />} />
+          <Route path="/academic" element={<AcademicBackground />} />
         </Routes>
       </div>
     </BrowserRouter>
