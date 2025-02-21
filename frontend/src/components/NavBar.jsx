@@ -5,7 +5,10 @@ const NavBar = () => {
     <div>
       <nav>
         <ul className="flex justify-between">
-          <li>About me</li>
+          <li>
+            {" "}
+            <a href="/aboutme"></a> About me
+          </li>
           <li>Skills</li>
           <l1>Hobbies & Interests</l1>
           <li>Passions</li>
