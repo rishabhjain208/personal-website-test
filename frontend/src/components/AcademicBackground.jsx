@@ -13,7 +13,7 @@ const education = [
   },
   {
     degree: "Higher Secondary Education",
-    institution: "ABC Senior Secondary School",
+    institution: "Rishabh Academy ",
     year: "2020",
   },
 ];
